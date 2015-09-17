@@ -1,0 +1,35 @@
+
+body{
+  width:85%;
+  margin: 0 auto 0 auto;
+  background: #818181;
+}
+
+header {
+  background: #0000ff url("/Users/iainhamilton/GitHub/Peopletraction/Images/header-img.jpg") no-repeat center center;
+  background-size: cover;
+  height: 250px;
+  margin: 0;
+}
+header h1, h2 {
+  text-align: center;
+  color: #ffffff;
+  font-family: helvetica, serif;
+  font-weight: 200;
+}
+.container {
+  background: #dfdfdf;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin:0;
+}
+  .container {
+  justify-content: space-around;
+}
+.services {
+  height: 250px;
+  background: #dfdfdf;
+  width: 20%;
+}
