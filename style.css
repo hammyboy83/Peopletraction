@@ -6,30 +6,59 @@ body{
 }
 
 header {
-  background: #0000ff url("/Users/iainhamilton/GitHub/Peopletraction/Images/header-img.jpg") no-repeat center center;
-  background-size: cover;
+  background: #ffffff;
   height: 250px;
   margin: 0;
 }
 header h1, h2 {
   text-align: center;
-  color: #ffffff;
+  color: #888888;
   font-family: helvetica, serif;
   font-weight: 200;
+}
+
+.blockcontainer {
+  background: #dfdfdf;
+  height: 250px;
+  display: block;
+  padding: 60px 0 60px 0;
+  margin: 0;
 }
 .container {
   background: #dfdfdf;
   height: 250px;
+  box-sizing: padding-box;
+  display:table-row;
+  margin:0;
+  /*border: 1 solid black;*/
+}
+
+.container2 {
+  background: #dfdfdf;
   display: flex;
   flex-direction: row;
   padding: 0;
   margin:0;
 }
-  .container {
-  justify-content: space-around;
-}
 .services {
+  display: table-cell;
   height: 250px;
   background: #dfdfdf;
   width: 20%;
+  padding: 60px 5% 60px 5%;
+  border: 1 solid black;
+}
+.contact {
+  margin:0 auto 0 auto;
+}
+.intro{
+  width:85%;
+  margin: 0 auto 0 auto;
+}
+.services h1 {
+  text-align: center;
+}
+
+.servcies p {
+  text-align: center;
 }
