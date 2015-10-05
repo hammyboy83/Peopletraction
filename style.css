@@ -1,20 +1,16 @@
 
 body{
-  width:85%;
   margin: 0 auto 0 auto;
-  background: #818181;
+  background: #ffffff;
 }
 
 header {
   background: #ffffff;
-  height: 250px;
   margin: 0;
-}
-header h1, h2 {
-  text-align: center;
-  color: #888888;
-  font-family: helvetica, serif;
-  font-weight: 200;
+  overflow: auto;
+  display: table  ;
+  border-spacing: 10px 10px;
+  width: 100%;
 }
 
 .blockcontainer {
@@ -61,4 +57,34 @@ header h1, h2 {
 
 .servcies p {
   text-align: center;
+}
+header h1 {
+  display: table-cell;
+  color: #ffffff;
+  font-size: 4vw;
+  font-family: helvetica, serif;
+  font-weight: 200;
+  text-align: center;
+  background: blue;
+  border-radius: 15px 15px 15px 15px;
+  width: 33%;
+  padding: 20px;
+}
+header ul{
+  list-style: none;
+  float: right;
+  padding-right: 10px;
+  vertical-align: middle;
+  }
+header ul li {
+  display: inline;
+  padding: 10px;
+  border-right: 1px solid #343434;
+}
+header ul li a{
+  width:10%;
+
+}
+.tablerow {
+  display: table-row;
 }
