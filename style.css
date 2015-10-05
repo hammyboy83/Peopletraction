@@ -8,11 +8,55 @@ header {
   background: #ffffff;
   margin: 0;
   overflow: auto;
-  display: table  ;
-  border-spacing: 10px 10px;
-  width: 100%;
+}
+header h1 {
+  color: #ffffff;
+  font-size: 3vw;
+  font-family: helvetica, serif;
+  font-weight: 200;
+  text-align: center;
+  background: blue;
+  border-radius: 15px 15px 15px 15px;
+  padding: 20px;
+  box-sizing: content-box;
+  width: 30%;
 }
 
+header ul{
+  list-style: none;
+  padding-right: 10px;
+  vertical-align: middle;
+  }
+header ul li {
+  display: table-cell;
+  padding: 10px;
+  border-right: 1px solid #343434;
+  width: 40%;
+  text-align: center;
+}
+header ul li:hover{
+  padding: 10px;
+  border-radius: 5px;
+  background: blue;
+  color: #ffffff;
+  width: 40%;
+  text-align: center;
+}
+.tablerow {
+  display: table-row;
+}
+.table {
+  display:table;
+  border-spacing: 10px 10px;
+  table-layout: fixed;
+}
+.table-cell {
+  display: table-cell;
+}
+.table-cell60 {
+  display: table-cell;
+  width: 90%;
+}
 .blockcontainer {
   background: #dfdfdf;
   height: 250px;
@@ -57,34 +101,4 @@ header {
 
 .servcies p {
   text-align: center;
-}
-header h1 {
-  display: table-cell;
-  color: #ffffff;
-  font-size: 4vw;
-  font-family: helvetica, serif;
-  font-weight: 200;
-  text-align: center;
-  background: blue;
-  border-radius: 15px 15px 15px 15px;
-  width: 33%;
-  padding: 20px;
-}
-header ul{
-  list-style: none;
-  float: right;
-  padding-right: 10px;
-  vertical-align: middle;
-  }
-header ul li {
-  display: inline;
-  padding: 10px;
-  border-right: 1px solid #343434;
-}
-header ul li a{
-  width:10%;
-
-}
-.tablerow {
-  display: table-row;
 }
