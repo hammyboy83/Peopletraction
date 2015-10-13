@@ -159,7 +159,7 @@ div h1{
   #hero p{
   color: #ffffff;
   width: 65%;
-  font-size: 7vh ;
+  font-size: 5vh ;
   text-align: center;
   box-sizing: padding-box;
   background-color: #14748c;
@@ -197,10 +197,13 @@ div h1{
   }
 .service {
   width: 300px;
-  margin: 5%;
+  height: 500px;
+  margin: 3%;
+  padding: 2%;
   display: block;
   text-align: center;
   align-self: flex-start;
+  box-shadow: 10px 10px 24px -11px rgba(0,0,0,0.75);
     }
 .service img{
   margin: 0 0 15px 0;
