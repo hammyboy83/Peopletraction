@@ -12,6 +12,7 @@ body{
 
 @media screen and (min-width: 600px){ /*nav bar for wide screen */
     header {
+margin-top: 20px;
       align-content: flex-end;
       align-items: center;
       display: flex;
@@ -61,7 +62,7 @@ body{
 
   .img-center {
     width: 250px;
-    margin: 0 auto 0 auto;
+    margin: 70px auto 0 auto;
     display: block;
   }
   .nav {
@@ -185,6 +186,29 @@ div h1{
     padding: 0;
   }
 }
+.contact{
+  height: 60px;
+  background: #14748c;
+  left: 50%;
+  margin-left: -45%;
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  top:0px;
+  width: 90%;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0;
+  box-sizing: content-box;
+  opacity: 0.8 ;
+}
+.contact p,a{
+  display: inline;
+}
+.contact a{
+  color: #ffffff;
+}
 
 .flex-container {
   align-content: flex-end;
@@ -204,6 +228,7 @@ div h1{
   text-align: center;
   align-self: flex-start;
   box-shadow: 10px 10px 24px -11px rgba(0,0,0,0.75);
+  border-radius: 10px;
     }
 .service img{
   margin: 0 0 15px 0;
@@ -219,4 +244,19 @@ div h1{
 .hero-img {
   width:100%;
   overflow: hidden;
+}
+.why section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.why {
+  width: 400px;
+  margin: 0 5%;
+  height: 250px;
+}
+.why-title{
+  width: 90%;
+  margin: 10px auto 10px auto;
 }
