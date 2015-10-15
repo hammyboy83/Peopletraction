@@ -59,7 +59,7 @@ margin-top: 20px;
     }
     .current{
       border-bottom: 5px solid #14748c;
-    
+
 }
 @media screen and (max-width: 600px){ /*nav bar for mobile screen */
 
@@ -318,8 +318,43 @@ section.social img{
   padding: 3px 0 0 30px;
   margin-bottom: 20px;
   }
-  .contact-us {
+.contact-us {
     width: 90%;
     margin: 10px auto 50px auto;
     text-align: center;
-    
+}
+/* TEAM PAGE */
+
+.team {  width:85%;
+  text-align: center;
+  display: block;
+  margin:auto;
+}
+
+.team-flex-container{
+  align-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align:top;
+  align-items: flex-start;
+  }
+  .team-img {
+    width: 500px;
+    margin: 0 5%;
+    min-height: 250px;
+    text-align: center;
+    margin: 10px auto 50px auto;
+  }
+  .team-img img{
+    width: 300px;
+    align-self: center;
+  }
+  .team-txt{
+    margin: 10px auto 50px auto;
+    text-align: left;
+  }
+  .team-txt p{
+    width: 500px  ;
+  }
