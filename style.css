@@ -57,6 +57,9 @@ margin-top: 20px;
         border-bottom: 5px #14748c solid;
         text-transform: capitalize;
     }
+    .current{
+      border-bottom: 5px solid #14748c;
+    
 }
 @media screen and (max-width: 600px){ /*nav bar for mobile screen */
 
@@ -315,3 +318,8 @@ section.social img{
   padding: 3px 0 0 30px;
   margin-bottom: 20px;
   }
+  .contact-us {
+    width: 90%;
+    margin: 10px auto 50px auto;
+    text-align: center;
+    
