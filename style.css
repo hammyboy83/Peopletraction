@@ -57,6 +57,13 @@ header {
         border-bottom: 5px #14748c solid;
         text-transform: capitalize;
     }
+    .nav ul:hover .current {
+      background-image: none !important;
+      background-size: 10px;
+      background-position: 5% 50%;
+      border: 0;
+      background-size: ;
+    }
   }
     .current{
       border-bottom: 5px solid #14748c;
