@@ -11,7 +11,7 @@ body{
 }
 
 header {
-      margin-top: 20px;
+      margin: 20px auto 0 auto;
       align-content: flex-end;
       align-items: center;
       display: flex;
@@ -19,6 +19,7 @@ header {
       flex-wrap: wrap;
       justify-content:space-around;
       vertical-align:top;
+      width: 85%;
     }
     header div{
       width: 100;
@@ -26,7 +27,7 @@ header {
 
     header img {
       width: 250px;
-      margin: 50px 0 20px 5%;
+      margin: 50px auto 20px auto ;
       align-self: flex-end;
     }
 
@@ -64,6 +65,15 @@ header {
       border: 0;
       background-size: ;
     }
+    .nav.center ul {
+  		left: 50%;
+  		margin-left: 0px !important;
+  	}
+.nav.center ul li{
+  margin-bottom: 50px;
+}
+.nav {line-height: 50px;
+text-align: center; }
   }
     .current{
       border-bottom: 5px solid #14748c;
