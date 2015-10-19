@@ -437,3 +437,11 @@ section.social img{
   font-size: 20px;
   color: #14748c;
 }
+
+/* contact page*/
+
+#map {
+  width: 90%;
+  height: 400px;
+  margin: 4% auto 4% auto;
+}

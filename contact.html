@@ -2,6 +2,23 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+    function initialize() {
+      var mapCanvas = document.getElementById('map');
+      var mapOptions = {
+        center: new google.maps.LatLng(57.1498817,-2.1960762),
+        zoom: 12 ,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions)
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
 </head>
 <body>
   <header>
@@ -11,10 +28,10 @@
       <ul>
         <li><a href="home.html" >Home</a></li>
         <li><a href="about.html" >About</a></li>
-        <li><a href="services.html" >services</a></li>
+        <li><a href="home.html#services" >services</a></li>
         <li><a href="case-studies.html" >Case Studies</a></li>
         <li><a href="blog.alta-blue.com" >Blog</a></li>
-        <li><a href="why.html" >why people traction?</a></li>
+        <li><a href="home.html#why" >why people traction?</a></li>
         <li><a href="contact.html" class="current" >contact</a></li>
 
       </ul>
@@ -48,6 +65,10 @@
 
         <a class="lightbox-52871864956371" style="cursor:pointer;color:#ffffff;text-decoration:none;background:#FA9A50;border-radius:5px;padding:10px;">Contact us</a>
   </div>
+  <section id="map">
+
+  </section>
+
   <footer>
     <section class="footer-link">
      <ul>
