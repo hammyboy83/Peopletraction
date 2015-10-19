@@ -9,6 +9,12 @@ body{
   font-family: "open sans";
   line-height: 25px;
 }
+a{text-decoration: none;
+  color: #454545;
+}
+h1{
+  font-size: 24px;
+}
 
 header {
       margin: 20px auto 0 auto;
@@ -50,6 +56,7 @@ header {
         margin: 0 auto 0 auto;
         text-transform: capitalize;
     }
+
     @media screen and (min-width: 600px) {
     header nav ul li a:hover{
         text-decoration: none;
@@ -273,6 +280,7 @@ section.social img{
   vertical-align:top;
   align-items: flex-start;
   }
+
 .service {
   width: 300px;
   height: 500px;
@@ -370,5 +378,57 @@ section.social img{
     text-align: left;
   }
   .team-txt p{
-    width: 500px  ;
+    width: 400px  ;
   }
+
+  /* Servcies PAGE */
+
+  .service-flex-container{
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align:top;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 4%;
+    }
+
+.service-definition {
+  width: 100%;
+  align-items: flex-start;
+  text-align: left;
+}
+.service-benefit {
+  width: 100%;
+  min-width: 415px;
+  margin-top: 100px;
+  align-items: flex-start;
+  text-align: left;
+  align-content: center;
+  margin: auto;
+}
+.service-benefit h2{
+  display: inline;
+  font-size: 20px;
+  color: #14748c;
+}
+.service-benefit h1{
+  text-align: center;
+}
+.service-definition h1{
+  text-align: center;
+}
+.service-use-for{
+  width: 100%;
+  text-align: left;
+}
+.service-use-for h1{
+  text-align: center;
+}
+.service-use-for h2{
+  display: inline;
+  font-size: 20px;
+  color: #14748c;
+}
