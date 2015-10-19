@@ -345,6 +345,11 @@ section.social img{
     margin: 10px auto 50px auto;
     text-align: center;
 }
+.link {
+  color: #14748c;
+  text-decoration: underline;
+  white-space: nowrap;
+}
 /* TEAM PAGE */
 
 .team {  width:85%;
