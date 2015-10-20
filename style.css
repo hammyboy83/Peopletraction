@@ -315,20 +315,22 @@ section.social img{
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2)
     , (max-width:600px){
-  .service {
-    width: 100%!important;
-    margin: 3%;
-    padding: 2%;
-    display: block;
-    text-align: center;
-    align-self: flex-start;
-    box-shadow: 10px 10px 24px -11px rgba(0,0,0,0.75);
-    border-radius: 10px;
-    box-sizing: border-box;
-      }
-  .service img{
-    margin: 0 0 15px 0;
-  }
+
+      .flex-container {
+        display: block;
+        }
+        .service {
+          width: 100%!important;
+          margin: 3%;
+          padding: 2%;
+          display: block;
+          box-shadow: 10px 10px 24px -11px rgba(0,0,0,0.75);
+          border-radius: 10px;
+          box-sizing: border-box;
+            }
+        .service img{
+          margin: 0 0 15px 0;
+        }
 }
 
 .service {
