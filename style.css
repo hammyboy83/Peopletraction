@@ -165,11 +165,14 @@ text-align: center; }
       	.nav ul:hover {
       		background-image: none;
       	}
+        .nav ul:hover,.nav ul:active {
+          background-image: none;
+        }
       	.nav ul:hover li {
       		display: block;
       		margin: 0 0 5px;
       	}
-      	.nav ul:hover .current {
+      	.nav ul:hover .current,.nav ul:active .current {
       		background: url(images/icon-check.png) no-repeat 10px 7px;
       	}
 
