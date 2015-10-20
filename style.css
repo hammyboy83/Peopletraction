@@ -10,7 +10,11 @@ body{
   line-height: 25px;
 }
 
-@media screen and(max-device-width:600px){
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  , (max-width:600px){
 
   body{
     padding: none;
@@ -103,7 +107,11 @@ text-align: center; }
       border-bottom: 5px solid #14748c;
     }
 
-@media screen and (max-device-width: 600px) , (max-width:600px){
+    @media only screen
+      and (min-device-width: 320px)
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      , (max-width:600px){
 	.nav {
 		position: relative;
 		min-height: 80px;
@@ -245,7 +253,11 @@ section.social img{
   opacity: 0.6;
   line-height: 8vh;
 }
-  @media screen and (max-width:600px){
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  , (max-width:600px){
   #hero p{
     color: #ffffff;
     width: 100%;
@@ -298,9 +310,13 @@ section.social img{
   align-items: flex-start;
   }
 
-@media screen and (max-device-width:600px){
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    , (max-width:600px){
   .service {
-    width: 90%;
+    width: 100%!important;
     margin: 3%;
     padding: 2%;
     display: block;
@@ -308,6 +324,7 @@ section.social img{
     align-self: flex-start;
     box-shadow: 10px 10px 24px -11px rgba(0,0,0,0.75);
     border-radius: 10px;
+    box-sizing: border-box;
       }
   .service img{
     margin: 0 0 15px 0;
