@@ -4,11 +4,27 @@ body{
   margin: none;
   background: #ffffff;
   color: #454545;
-  font-size: 18px;
+  font-size: 16px;
   font-family: @import url(https://fonts.googleapis.com/css?family=Open+Sans);
   font-family: "open sans";
   line-height: 25px;
 }
+
+@media screen and(max-width:600px){
+
+  body{
+    padding: none;
+    margin: none;
+    background: #ffffff;
+    color: #454545;
+    font-size: 4vw;
+    font-family: @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    font-family: "open sans";
+    line-height: 25px;
+  }
+
+}
+
 a{text-decoration: none;
   color: #454545;
 }
@@ -57,7 +73,7 @@ header {
         text-transform: capitalize;
     }
 
-    @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     header nav ul li a:hover{
         text-decoration: none;
         color: #14748c;
