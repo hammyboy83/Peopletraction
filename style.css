@@ -17,7 +17,8 @@ body{
     margin: none;
     background: #ffffff;
     color: #454545;
-    font-size: 4vw;
+    font-size: 6vw;
+    line-height: 8vw;
     font-family: @import url(https://fonts.googleapis.com/css?family=Open+Sans);
     font-family: "open sans";
     line-height: 25px;
@@ -297,9 +298,24 @@ section.social img{
   align-items: flex-start;
   }
 
+@media screen and (max-device-width:600px){
+  .service {
+    width: 90%;
+    margin: 3%;
+    padding: 2%;
+    display: block;
+    text-align: center;
+    align-self: flex-start;
+    box-shadow: 10px 10px 24px -11px rgba(0,0,0,0.75);
+    border-radius: 10px;
+      }
+  .service img{
+    margin: 0 0 15px 0;
+  }
+}
+
 .service {
   width: 300px;
-  height: 500px;
   margin: 3%;
   padding: 2%;
   display: block;
