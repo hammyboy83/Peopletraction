@@ -236,11 +236,29 @@ div h1{
 section.social img{
   height: 50px;
 }
-#hero{
+#hero.home{
   margin: auto;
   height: 60%;
   width: 90%;
   background: url("http://www.peopletraction.co.uk/images/hero.jpg") no-repeat center fixed;
+  padding-left: 5%;
+  padding-top: 3%;
+  box-sizing:border-box;
+}
+#hero.inhouse{
+  margin: auto;
+  height: 60%;
+  width: 90%;
+  background: url("http://www.peopletraction.co.uk/images/images/hero2.jpg") no-repeat center fixed;
+  padding-left: 5%;
+  padding-top: 3%;
+  box-sizing:border-box;
+}
+#hero.lifecycle{
+  margin: auto;
+  height: 60%;
+  width: 90%;
+  background: url("http://www.peopletraction.co.uk/images/images/hero3.jpg") no-repeat center fixed;
   padding-left: 5%;
   padding-top: 3%;
   box-sizing:border-box;
