@@ -239,9 +239,22 @@ section.social img{
 #about-hero{
   background: url("http://www.peopletraction.co.uk/images/about-hero.gif") no-repeat center fixed ;
   width:87%;
-  margin:3% auto 3% auto;
+  margin:0 auto 3% auto;
   padding:20px;box-sizing:
   padding-box;
+}
+#about-hero p{
+  font-size:20px;
+  line-height:28px;
+  color:#fff;
+  margin: auto;
+  text-align: center;
+}
+#about-hero h1{
+  height: 55px;
+text-transform: capitalize;
+color: #fff;
+
 }
 #hero.home{
   margin: auto;
@@ -589,7 +602,6 @@ section.social img{
     vertical-align:top;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 4%;
     }
 
 .service-definition {
