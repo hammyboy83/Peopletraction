@@ -416,6 +416,8 @@ color: #fff;
     }
 .service img{
   margin: 0 0 15px 0;
+  width: 124px !important;
+  height: 124px !important;
 }
 
 .hr-line{
