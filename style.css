@@ -1,3 +1,8 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+
 
 body{
   padding: none;
@@ -8,6 +13,7 @@ body{
   font: @import url(https://fonts.googleapis.com/css?family=Open+Sans);
   font-family: "open sans";
   line-height: 25px;
+  z-index: 99;
 }
 
 @media only screen
@@ -120,7 +126,7 @@ header nav ul li a{
                           {
 
                             .contact{
-                              height:140px!important;
+                              height:initial !important;
                               margin-bottom: 10px;
                             }
                             header {
@@ -171,6 +177,9 @@ header nav ul li a{
                           		background: #ffffff;
                           		color: #666;
                           	}
+                            .current{
+                              border-bottom: none;
+                            }
 
                           	/* on nav hover */
                           	.nav ul:hover {
@@ -181,11 +190,15 @@ header nav ul li a{
                             }
                           	.nav ul:hover li {
                           		display: block;
-                          		margin: 0 0 5px;
+                          		margin: 0 0 5px ;
                           	}
                           	.nav ul:hover .current,.nav ul:active .current {
                           		background: url("http://www.peopletraction.co.uk/images/tick.svg") no-repeat 10px 7px;
                           	}
+                            .nav a{
+                              padding: 5px 5px 5px 60px;
+                              height:
+                            }
 }
 .main{
   width: 50%;
@@ -237,7 +250,9 @@ section.social img{
   height: 50px;
 }
 #about-hero{
-  background: url("http://www.peopletraction.co.uk/images/about-hero.gif") no-repeat center fixed ;
+  background: url("http://www.peopletraction.co.uk/images/about-hero.gif") fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   width:87%;
   margin:0 auto 3% auto;
   padding:20px;box-sizing:
@@ -257,37 +272,50 @@ color: #fff;
 
 }
 #hero.home{
-  margin: auto;
-  height: 60%;
+  margin: 3% auto 0 auto;
+  min-height: 60%;
   width: 90%;
-  background: url("http://www.peopletraction.co.uk/images/hero.jpg") no-repeat center fixed;
+  background: url("http://www.peopletraction.co.uk/images/hero.jpg") fixed !important;
+  background-size: cover!important;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-left: 5%;
   padding-top: 3%;
-  box-sizing:border-box;
+  padding-bottom: 3%;
+  box-sizing: border-box;
+  background-attachment: fixed;
 }
 #hero.inhouse{
-  margin: auto;
-  height: 60%;
+  margin: 3% auto 0 auto;
+  min-height: 60%;
   width: 90%;
-  background: url("http://www.peopletraction.co.uk/images/hero2.jpg") no-repeat center fixed;
+  background: url("http://www.peopletraction.co.uk/images/hero2.jpg") fixed !important;
+  background-size: cover!important;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-left: 5%;
   padding-top: 3%;
-  box-sizing:border-box;
+  padding-bottom: 3%;
+  box-sizing: border-box;
 }
 #hero.lifecycle{
-  margin: auto;
-  height: 60%;
+  margin: 3% auto 0 auto;
+  min-height: 60%;
   width: 90%;
-  background: url("http://www.peopletraction.co.uk/images/hero3.jpg") no-repeat center fixed;
+  background: url("http://www.peopletraction.co.uk/images/hero3.jpg") fixed !important;
+  background-size: cover!important;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-left: 5%;
   padding-top: 3%;
-  box-sizing:border-box;
+  padding-bottom: 3%;
+  box-sizing: border-box;
 }
 
   #hero p{
   color: #ffffff;
   width: 65%;
-  font-size: 5vh ;
+  font-size: 4vh ;
   text-align: center;
   box-sizing: padding-box;
   background-color: #14748c;
@@ -321,14 +349,14 @@ color: #fff;
 .contact{
   height: 60px;
   background: #14748c;
-  left: 50%;
+  left: 50.5%;
   margin-left: -45%;
   position:fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   top:0px;
-  width: 90%;
+  width: 89%;
   color: #ffffff;
   text-decoration: none;
   padding: 0;
@@ -423,7 +451,7 @@ color: #fff;
 .hr-line{
   height: 20px;
   background: #14748c;
-  margin: 20px auto 20px auto;
+  margin: 3% auto 3% auto;
   width: 90%;
 
 }
