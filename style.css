@@ -259,24 +259,23 @@ section.social img{
   padding-box;
 }
 #about-hero p{
-  font-size:20px;
-  line-height:28px;
   color:#fff;
   margin: auto;
   text-align: center;
+  width: 100%;
 }
 #about-hero h1{
   height: 55px;
 text-transform: capitalize;
 color: #fff;
-
 }
 #hero.home{
   margin: 3% auto 0 auto;
   min-height: 60%;
   width: 90%;
-  background: url("http://www.peopletraction.co.uk/images/hero.jpg") fixed !important;
+  background: url("http://www.peopletraction.co.uk/images/hero.jpg") fixed;
   background-size: cover!important;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   padding-left: 5%;
@@ -289,10 +288,11 @@ color: #fff;
   margin: 3% auto 0 auto;
   min-height: 60%;
   width: 90%;
-  background: url("http://www.peopletraction.co.uk/images/hero2.jpg") fixed !important;
+  background: url("http://www.peopletraction.co.uk/images/hero2.jpg")  fixed;
   background-size: cover!important;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-left: 5%;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -302,8 +302,9 @@ color: #fff;
   margin: 3% auto 0 auto;
   min-height: 60%;
   width: 90%;
-  background: url("http://www.peopletraction.co.uk/images/hero3.jpg") fixed !important;
+  background: url("http://www.peopletraction.co.uk/images/hero3.jpg")  fixed;
   background-size: cover!important;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   padding-left: 5%;
@@ -312,16 +313,51 @@ color: #fff;
   box-sizing: border-box;
 }
 
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px) ,
+      (min-device-width: 320px)
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      , (max-width:600px)
+
+{
+  #about-hero h1{
+    height: 55px;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 100px;
+  }
+#hero.lifecycle{
+  background: url("http://www.peopletraction.co.uk/images/hero3.jpg") scroll!important;
+  background-attachment: scroll!important;
+  min-height:50%;
+}
+#hero.inhouse{
+  background: url("http://www.peopletraction.co.uk/images/hero2.jpg") scroll !important;
+  background-attachment: scroll!important;
+}
+#hero.home{
+  background: url("http://www.peopletraction.co.uk/images/hero.jpg") scroll !important;
+  background-attachment: scroll!important;
+  background-position: right top !important;
+}
+
+#about-hero{
+  background: url("http://www.peopletraction.co.uk/images/about-hero.gif") ;
+}
+}
+
   #hero p{
   color: #ffffff;
   width: 65%;
-  font-size: 4vh ;
+  font-size: 4vw ;
   text-align: center;
   box-sizing: padding-box;
   background-color: #14748c;
   vertical-align:middle;
   opacity: 0.6;
-  line-height: 8vh;
+  line-height: 8vw;
 }
 @media only screen
   and (min-device-width: 320px)
@@ -333,6 +369,7 @@ color: #fff;
                               color: #ffffff;
                               width: 100%;
                               font-size: 5vw ;
+                              line-height: 6vw;
                               text-align: center;
                               background-color: #14748c;
                               margin: auto;
@@ -345,6 +382,9 @@ color: #fff;
                               margin: auto;
                               padding: 0;
                             }
+                            #about-hero p{
+                              font-size:36pt;
+                              line-height:46pt;}
 }
 .contact{
   height: 60px;
@@ -680,4 +720,205 @@ color: #fff;
   width: 90%;
   height: 400px;
   margin: 4% auto 4% auto;
+}
+
+/* lost page*/
+
+#lost {
+  background: url("http://www.peopletraction.co.uk/images/lost.jpg") ;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin:auto;
+  border-radius: 10px;
+
+}
+div.lost {
+  width:100%;
+  height:100%;
+  margin:0 auto;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 20px;
+
+}
+p.lostp  {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+   top: 30%;
+   transform: translateY(-30%);
+   -webkit-transform: translateY(-30%);
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+.container-hidden{
+  display: none;
+  width: 90%;
+  margin: auto;
+}
+.row{
+  margin:auto;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px (rgba0,0,0,.3);
+}
+.form-horizontal {
+  border-radius: 5px;
+  box-shadow: 0 1px 2px (rgba0,0,0,.3);
+}
+div.form-group{
+  display: inline-flex!important;
+  width: 40%;
+}
+div.form-group-block{
+  display: block;
+  text-align: center;
+}
+label.col-sm-2.control-label{
+width: 30%;
+}
+.form-control{
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.input-col{
+  width: 100%;
+}
+textarea.form-control{height:30% !important;
+}
+.button{
+  cursor:pointer;
+  color:#ffffff;
+  text-decoration:none;
+  background:#FA9A50;
+  border-radius:5px;
+  padding:10px;
+  border: 0px !important;
+  width: 30%;
+}
+.main-contact{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  , (max-width:600px){
+    div.form-group{
+      display: block!important;
+      width: 40%;
+      margin: auto;
+    }
+    .form-control{
+    display: block;
+    width: 100%;
+    height: 3vh;
+    padding: 6px 12px;
+    font-size: 2vh;
+    line-height: 1.42857143;
+    color: #555;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+    .button{
+      color: #ffffff;
+      text-decoration: none;
+      background: #FA9A50;
+      border-radius: 5px;
+      padding: 10px;
+      border: 0px !important;
+      width: 30vw;
+      height: 5vh;
+      font-size: 2vh;
+      appearance: normal;
+      -webkit-appearance: none;
+      -webkit-border-radius: 20px;
+    }
+}
+.result{
+  margin:auto;
+  width: 70%;
+  text-align: center;
+}
+input[type=checkbox] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+[for="read_more"] {
+    display: block;
+    position: initial;
+    bottom: -3rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+}
+[for="read_more"] .button{
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  background: #FA9A50;
+  border-radius: 5px;
+  padding: 10px;
+  border: 0px !important;
+  width: 30%;
+  margin: auto;
+}
+
+input[type=submit]:checked ~ .container-hidden{
+  display: none;
+  visibility: hidden;
+}
+input[type=submit]:checked ~ div.result{
+  display: block;
+  visibility: visible;
+  margin:auto;
+  width: 70%;
+  text-align: center;
+}
+input[type=checkbox]:checked ~ .container-hidden {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked ~ label{
+  display: none;
+  visibility: hidden;
+}
+input[type=checkbox]:checked ~ [for="read_more"] .button {
+    display: none;
+    visibility: hidden;
 }
