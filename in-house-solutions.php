@@ -2,18 +2,21 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-</head>
+  <style type="text/css">
+  <?php include 'php-fn/eucookie-cdd.php' ; ?>
+  </style>
+  <?php include 'php-fn/eucookie-fn.php' ; ?>
 <body>
   <header>
     <img src="http://www.peopletraction.co.uk/images/logo-design.svg" class="img-center">
     <div></div>
      <nav class="nav">
       <ul onclick="return true">
-        <li><a href="home.html" >Home</a></li>
-        <li><a href="about.html" >About</a></li>
-        <li><a href="home.html#services" class="current"  >services</a></li>
-        <li><a href="home.html#why" >why people traction?</a></li>
-        <li><a href="contact.html" >contact</a></li>
+        <li><a href="home" >Home</a></li>
+        <li><a href="about" >About</a></li>
+        <li><a href="home#services" class="current"  >services</a></li>
+        <li><a href="home#why" >why people traction?</a></li>
+        <li><a href="contact" >contact</a></li>
 
       </ul>
     </nav>
@@ -21,10 +24,7 @@
   <section id="hero" class="inhouse">
     <p>Delivering top talent efficiently through <span style="white-space: nowrap;">In-house</span> recrutiment solutions</p>
   </section>
-  <section class="contact">
-    <p> <a href="mailto:info@peopletraction.co.uk">Email</a></p>
-    <p> Phone <a href="tel:###">###</a></p>
-  </section>
+  <?php include 'php-fn/sticky-contact.php' ; ?>
   <div class="hr-line">
   </div>
   <main class="service-main">
@@ -80,22 +80,8 @@
 
         <a class="lightbox-52871864956371" style="cursor:pointer;color:#ffffff;text-decoration:none;background:#FA9A50;border-radius:5px;padding:10px;">Contact us</a>
   </div>
-  <footer>
-    <section class="footer-link">
-     <ul>
-       <li class="current" ><a href="" >Home</a></li>
-       <li><a href="" >About</a></li>
-       <li><a href="" >services</a></li>
-       <li><a href="" >contact</a></li>
-     </ul>
-   </section>
-    <section class="social">
-       <a href=""><img src="http://www.peopletraction.co.uk/images/facebook.svg"></a>
-       <a href=""><img src="http://www.peopletraction.co.uk/images/linkedin.svg"></a>
-       <a href=""><img src="http://www.peopletraction.co.uk/images/twitter.svg"></a>
-     </section>
+  <?php include 'php-fn/footer.php' ; ?>
 
-  </footer>
 </body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

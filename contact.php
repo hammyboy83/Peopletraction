@@ -2,9 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-  <style>
 
-  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -20,27 +18,62 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+    <style type="text/css">
+    <?php include 'php-fn/eucookie-cdd.php' ; ?>
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <?php
+    if(!isset($_COOKIE['eucookie']))
+    { ?>
+    <script type="text/javascript">
+    function SetCookie(c_name,value,expiredays)
+    {
+    var exdate=new Date()
+    exdate.setDate(exdate.getDate()+expiredays)
+    document.cookie=c_name+ "=" +escape(value)+";path=/"+((expiredays==null) ? "" : ";expires="+exdate.toUTCString())
+    }
+    </script>
+    <?php } ?>
+    <title>EU Cookie Law Script 2</title>
+    </head>
+    <body>
+    <?php
+    if(!isset($_COOKIE['eucookie']))
+    { ?>
+        <div id="eucookielaw" >
+                <p>By browsing our site you agree to our use of cookies. You will only see this message once.
+                <a href="cookies" id="more">Find out more</a></p>
+        </div>
 
-</head>
+
+
+        </section>
+    <script type="text/javascript">
+    if( document.cookie.indexOf("eucookie") ===-1 ){
+    $("#eucookielaw").show();
+    SetCookie('eucookie','eucookie',365*10)
+    }
+    else {
+    $("#eucookielaw").remove();
+    }
+    </script>
+    <?php } ?>
 <body>
   <header>
     <img src="http://www.peopletraction.co.uk/images/logo-design.svg" class="img-center">
     <div></div>
      <nav class="nav">
       <ul onclick="return true">
-        <li><a href="home.html" >Home</a></li>
-        <li><a href="about.html" >About</a></li>
-        <li><a href="home.html#services" >services</a></li>
-        <li><a href="home.html#why" >why people traction?</a></li>
-        <li><a href="contact.html" class="current" >contact</a></li>
+        <li><a href="home" >Home</a></li>
+        <li><a href="about" >About</a></li>
+        <li><a href="home#services" >services</a></li>
+        <li><a href="home#why" >why people traction?</a></li>
+        <li><a href="contact" class="current" >contact</a></li>
 
       </ul>
     </nav>
   </header>
-  <section class="contact">
-    <p> <a href="mailto:info@peopletraction.co.uk">Email</a></p>
-    <p> Phone <a href="tel:###">###</a></p>
-  </section>
+  <?php include 'php-fn/sticky-contact.php' ; ?>
   <div class="hr-line">
   </div>
   <main class="main-contact">
@@ -160,22 +193,8 @@
 
   </section>
 
-  <footer>
-    <section class="footer-link">
-     <ul>
-       <li class="current" ><a href="" >Home</a></li>
-       <li><a href="" >About</a></li>
-       <li><a href="" >services</a></li>
-       <li><a href="" >contact</a></li>
-     </ul>
-   </section>
-    <section class="social">
-       <a href=""><img src="http://www.peopletraction.co.uk/images/facebook.svg"></a>
-       <a href=""><img src="http://www.peopletraction.co.uk/images/linkedin.svg"></a>
-       <a href=""><img src="http://www.peopletraction.co.uk/images/twitter.svg"></a>
-     </section>
+  <?php include 'php-fn/footer.php' ; ?>
 
-  </footer>
 </body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

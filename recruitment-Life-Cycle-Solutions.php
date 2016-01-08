@@ -2,18 +2,21 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-</head>
+  <style type="text/css">
+  <?php include 'php-fn/eucookie-cdd.php' ; ?>
+  </style>
+  <?php include 'php-fn/eucookie-fn.php' ; ?>
 <body>
   <header>
     <img src="http://www.peopletraction.co.uk/images/logo-design.svg" class="img-center">
     <div></div>
      <nav class="nav">
       <ul onclick="return true">
-        <li><a href="home.html" >Home</a></li>
-        <li><a href="about.html" >About</a></li>
-        <li><a href="home.html#services" class="current"  >services</a></li>
-        <li><a href="home.html#why" >why people traction?</a></li>
-        <li><a href="contact.html" >contact</a></li>
+        <li><a href="home" >Home</a></li>
+        <li><a href="about" >About</a></li>
+        <li><a href="home#services" class="current"  >services</a></li>
+        <li><a href="home#why" >why people traction?</a></li>
+        <li><a href="contact" >contact</a></li>
 
       </ul>
     </nav>
@@ -21,28 +24,25 @@
   <section id="hero" class="lifecycle">
       <p>Providing sustainable recruitment processes through Recruitment <span style="white-space: nowrap;">Life-Cycle</span> Outsourcing</p>
   </section>
-  <section class="contact">
-    <p> <a href="mailto:info@peopletraction.co.uk">Email</a></p>
-    <p> Phone <a href="tel:###">###</a></p>
-  </section>
+  <?php include 'php-fn/sticky-contact.php' ; ?>
   <div class="hr-line">
   </div>
   <main class="service-main">
     <div class="service-flex-container">
       <div id="about-hero">
       <section class="service-definition">
-        <h1>Recruiment Life-Cycle Outsourcing solutions</h1>
+        <h1>Recruiment Life-Cycle Outsourcing Solutions</h1>
         <p>Our strategy consultants work with you to create a full recruitment process from justification of new vacancy to on-boarding of new hires and any systems involved throughout the process. The process will cover the full recruitment life-cycle and will focus on providing the best possible experience to your hiring manager and candidates alike. Alternatively if you already have a recruitment process/systems designed we will provide a recruitment function that will deliver your recruitment process and talent attraction strategy.</p>
         <br>
         <p> Recruitment Life-cycle Outsourcing services are a value added version of the typical RPO model focusing on delivering excellent talent and superior services to your candidates and hiring managers alike. These services can be used to deliver your complete companies process, for a specific function, region or individual steps <span style="white-space: nowrap;"> within your process.</span></p>
       </section>
     </div>
       <section class="service-use-for">
-        <h1>Use In-house solutions for</h1>
+        <h1>Use Recruitment Lifecycle Solutions for</h1>
         <p><h2>Start-up</h2> often have aggressive growth plans in order to become profitable. The ability to grow your business relies on having the right people to deliver your services and to support your business. Creating a scaleable and sustainable recruitment process and strategy will set your business up for long term success and can be delivered to ensure cost efficiency.</p>
         <p><h2>SME</h2> sized companies have had to make do with traditional style recruitment agency services as committing to the cost of a recruitment team cannot be justified by the number of new hires required. Outsourcing the full Recruitment Life-cycle to People Traction allows us to dedicate the resources required meaning you benefit from the cost efficiency of having your own recruitment team without having to employ full-time employees.</p>
         <p><h2>Large organisations</h2> can experience significant costs and inefficiencies from a disjointed recruitment process. People Traction will help you define your recruitment process whilst allowing for regional or functional variances. Having defined this recruitment process we will deliver our recruitment service ensuring your hiring managers and candidates recieve an excellent experience.</p>
-        <p style="display:inline;">RPO solutions can be used to <h2>deliver specific</h2> steps of your recruitment process. Our strategy consultants can be engaged to create the recruitment process to be delivered by your team or the initial review of all you applicants can be outsourced to People Traction recruiters. Our strategy consultants will work with you to decide which steps could be outsourced to provide increased efficiency within you business.</p>
+        <p style="display:inline;">Recruitment Lifecycle Solutions can be used to deliver <h2>individual parts</h2>  of your recruitment process. Our strategy consultants can be engaged to create the recruitment process to be delivered by your team or the initial review of all you applicants can be outsourced to People Traction recruiters. Our strategy consultants will work with you to decide which steps could be outsourced to provide increased efficiency within you business.</p>
         </section>
       <section class="service-benefit">
         <h1>Benefits</h1>
@@ -50,7 +50,7 @@
 
         <p><h2>Sustainable</h2> - Outsourcing your recruitment process to People Traction will provide a sustainable process and strategy that continually pipelines talent for the future making sure your future employees can be recruited quicker than ever before.</p>
 
-        <p><h2>Emplyer brand</h2> - Every time we recruit for our clients using our Recruitment Life-cycle services we promote our employers brand and ensure candidates receive an excellent experience. Before long talent will be easier to find and already engaged with your brand before the recruitment process begins.</p>
+        <p><h2>Employer brand</h2> - Every time we recruit for our clients using our Recruitment Life-cycle services we promote our employers brand and ensure candidates receive an excellent experience. Before long talent will be easier to find and already engaged with your brand before the recruitment process begins.</p>
 
         <p><h2>Quality</h2> - We constantly monitor the quality of services we provide to our clients and the candidates applying for their jobs. We use these reports in collaboration with our clients to deliver continually improving services and the best candidate experience possible.</p>
       </section>
@@ -74,22 +74,8 @@
 
         <a class="lightbox-52871864956371" style="cursor:pointer;color:#ffffff;text-decoration:none;background:#FA9A50;border-radius:5px;padding:10px;">Contact us</a>
   </div>
-  <footer>
-    <section class="footer-link">
-     <ul>
-       <li class="current" ><a href="" >Home</a></li>
-       <li><a href="" >About</a></li>
-       <li><a href="" >services</a></li>
-       <li><a href="" >contact</a></li>
-     </ul>
-   </section>
-    <section class="social">
-       <a href=""><img src="http://www.peopletraction.co.uk/images/facebook.svg"></a>
-       <a href=""><img src="http://www.peopletraction.co.uk/images/linkedin.svg"></a>
-       <a href=""><img src="http://www.peopletraction.co.uk/images/twitter.svg"></a>
-     </section>
+  <?php include 'php-fn/footer.php' ; ?>
 
-  </footer>
 </body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
