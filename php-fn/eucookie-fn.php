@@ -13,7 +13,6 @@ document.cookie=c_name+ "=" +escape(value)+";path=/"+((expiredays==null) ? "" : 
 }
 </script>
 <?php } ?>
-<title>EU Cookie Law Script 2</title>
 </head>
 <body>
 <?php

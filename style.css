@@ -253,7 +253,7 @@ section.social img{
   background: url("http://www.peopletraction.co.uk/images/about-hero.gif") fixed;
   background-repeat: no-repeat;
   background-position: center;
-  width:87%;
+  width:87.2%;
   margin:0 auto 3% auto;
   padding:20px;box-sizing:
   padding-box;
@@ -494,6 +494,7 @@ and (max-device-width : 1366px) ,
   width: 300px;
   margin: 3%;
   padding: 2%;
+  box-sizing: padding-box;
   display: block;
   text-align: center;
   align-self: flex-start;
@@ -554,7 +555,7 @@ and (max-device-width : 1366px) ,
 }
 .why-title{
   width: 90%;
-  margin: 10px auto 50px auto;
+  margin: 10px auto 0 auto;
   text-align: center;
 }
 .why ul{
@@ -843,6 +844,7 @@ textarea.form-control{height:30% !important;
   padding:10px;
   border: 0px !important;
   width: 30%;
+  margin: 50px 0 50px 0;
 }
 .main-contact{
   width: 70%;
@@ -914,6 +916,7 @@ input[type=checkbox] {
     width: 100%;
     text-align: center;
     padding: .65rem;
+    margin: 50px 0;
 }
 [for="read_more"] .button{
   cursor: pointer;
