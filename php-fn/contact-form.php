@@ -36,14 +36,22 @@
   // If there are no errors, send the email
   if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     if (mail ($to, $subject, $body, $from, $headers)) {
-      $result='	<div style="width:30%"></div><div id="result" class="result">Thank You! We will be in touch</div>';
+      $result1='	<div style="width:30%"></div><div id="result" class="result">Thank You! We will be in touch</div>';
     } else {
-      $result='<div class="result-danger">Sorry there was an error sending your message. Please try again later.</div>';
+      $result1='<div class="result-danger">Sorry there was an error sending your message. Please try again later.</div>';
     }
   }
     }
   ?>
+  <?php
+  if (isset($_POST["check"])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
 
+    include 'mail-optin.php';
+  }
+
+   ?>
   <?php
   if (!$errName && !$errEmail && !$errMessage && !$errHuman){
 echo '<div class="container-hidden">';
@@ -89,6 +97,14 @@ echo '<div class="container">';
           </div>
         </div>
       </div>
+      <div style="display:block;"><div class="form-group">
+        <label for="check1" class="col-sm-2 control-label"></label>
+        <div class="input-col">
+        <label for="check" class="col-sm-2 control-label">Join mailing list</label>
+        <input id="check" name="check" type="radio" value="optin" class="radio-inline">
+      </div>
+      </div>
+      </div>
           <div style="display:block;"><div class="form-group">
         <label for="submit" class="col-sm-2 control-label"></label>
         <div class="input-col">
@@ -96,6 +112,7 @@ echo '<div class="container">';
           </div>
         </div>
         </div>
+
           <div style="display:block;"><div class="form-group">
         </div>
         </div>
@@ -103,4 +120,4 @@ echo '<div class="container">';
     </div>
   </div>
 </article>
-<?php echo $result; ?>
+<?php echo $result1; ?>

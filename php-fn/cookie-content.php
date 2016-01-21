@@ -27,7 +27,7 @@
 
 
 
-<p>In order to provide you with a great experience on this site we provide the functionality to set your preferences for how this site runs when you use it. In order to remember your preferences we need to set cookies so that this information can be called whenever you interact with a page is affected by your preferences.</p>
+<p>In order to provide you with a great experience on this site we use a cookie to hide the cookie information notice after the first time you visit our site. This cookie expires in approximately 10 years. If our cookies policy changes we will make sure the cookie bar reappears the next time you visit the site. We also provide a link to our cookie policy at the bottom of every page within our site.</p>
 
 
 
