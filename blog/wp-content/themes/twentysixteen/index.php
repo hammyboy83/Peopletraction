@@ -1,8 +1,8 @@
+<html>
 <?php include '../php-fn/head-blog.php' ; ?>
-<style type="text/css">
-<?php include '../php-fn/eucookie-cdd.php' ; ?>
-</style>
 <?php include '../php-fn/eucookie-fn.php' ; ?>
+
+
 
 <?php
 $class = about;
@@ -12,8 +12,7 @@ include '../php-fn/header.php' ; ?>
 
 <?php include '../php-fn/hr-line.php' ; ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<section class="flex-container">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -51,10 +50,10 @@ include '../php-fn/header.php' ; ?>
 		endif;
 		?>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
+	</section>
 <?php get_footer(); ?>
+
+
 <?php include '../php-fn/contact-form.php' ; ?>
 
 <?php include '../php-fn/footer.php' ; ?>

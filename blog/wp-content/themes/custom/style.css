@@ -7,7 +7,7 @@ html{
 body{
   padding: none;
   margin: none;
-  background: #ffffff;
+  background: #ffffff!important;
   color: #454545;
   font-size: 16px;
   font: @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -1014,4 +1014,3 @@ h2.screen-reader-text {
   visibility: hidden;
   display: none;
 }
-/**
