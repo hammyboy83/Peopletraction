@@ -12,9 +12,10 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
+
+	<?php twentysixteen_excerpt(); ?>
+
 	<?php twentysixteen_post_thumbnail(); ?>
-	<?php the_author(); ?><span>,</span>
-	<?php the_time('jS F Y') ?><br />
 
 	<div class="entry-content">
 		<?php
@@ -29,7 +30,24 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 
+			if ( '' !== get_the_author_meta( 'description' ) ) {
+				get_template_part( 'template-parts/biography' );
+			}
 		?>
 	</div><!-- .entry-content -->
 
+	<footer class="entry-footer">
+		<?php twentysixteen_entry_meta(); ?>
+		<?php
+			edit_post_link(
+				sprintf(
+					/* translators: %s: Name of current post */
+					__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
+					get_the_title()
+				),
+				'<span class="edit-link">',
+				'</span>'
+			);
+		?>
+	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

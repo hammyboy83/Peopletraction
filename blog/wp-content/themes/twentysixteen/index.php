@@ -1,18 +1,24 @@
-<html>
-<?php include '../php-fn/head-blog.php' ; ?>
-<?php include '../php-fn/eucookie-fn.php' ; ?>
-
-
-
 <?php
-$class = about;
-include '../php-fn/header.php' ; ?>
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage Twenty_Sixteen
+ * @since Twenty Sixteen 1.0
+ */
 
-<?php include '../php-fn/sticky-contact.php' ; ?>
+get_header(); ?>
 
-<?php include '../php-fn/hr-line.php' ; ?>
 
-		<section class="flex-container">
+	<div id="primary" class="content-area">
+		<main id="main" class="flex-container" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -50,16 +56,7 @@ include '../php-fn/header.php' ; ?>
 		endif;
 		?>
 
-	</section>
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
 <?php get_footer(); ?>
-
-
-<?php include '../php-fn/contact-form.php' ; ?>
-
-<?php include '../php-fn/footer.php' ; ?>
-</body>
-
-<?php include '../php-fn/ga.php' ; ?>
-
-
-</html>

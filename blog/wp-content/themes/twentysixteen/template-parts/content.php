@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The template part for displaying content
@@ -13,7 +14,7 @@
 			<span class="sticky-post"><?php _e( 'Featured', 'twentysixteen' ); ?></span>
 		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 ><a href="%s" class="entry-title" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	<!-- .entry-header -->
 	<?php the_author(); ?><span>,</span>
 	<?php the_time('jS F Y') ?><br />

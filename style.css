@@ -970,6 +970,8 @@ input[type=checkbox]:checked ~ [for="read_more"] .button {
 .entry-content {
   width: 80%;
   margin: auto;
+  font-size: 20px;
+  line-height: 33px;
 }
 div .entry-head {
     width: 80%;
