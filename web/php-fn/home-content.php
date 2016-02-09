@@ -1,5 +1,5 @@
 
-<section id="hero" class="home">
+<section id="hero" class="home" title="In-house recruitment solutions and stratgey">
   <p>Delivering sustainable In-house recruitment solutions through excellent client relationships</p>
 </section>
 <main class="main" style="display:none;">
@@ -10,9 +10,9 @@
 <div class="hr-line" id="services">
 </div>
 <section class="flex-container">
-  <a href="recruitment-Life-Cycle-Solutions"><div class="service" >
+  <a href="recruitment-life-cycle-solutions"><div class="service" >
     <h1>Recruitment Life Cycle Outsourcing</h1>
-    <div><img src="http://www.peopletraction.co.uk/images/business120.svg" style="width:124px;width:124px;">
+    <div><img src="images/business120.svg" style="width:124px;width:124px;" alt="Recruitment Life Cycle Outsourcing link">
     <p>Our Recruitment Life-cycle services help you define your recruitment process ensuring your organisation is able to attract the best talent quickly. We are acutely aware that the recruitment process is all about people so not only will you attract the best talent, your recruitment process will onboard talent in a way that gives them confidence in their new career decision. </p><p> <span class="link" >Learn more</span> about the full range of Recruitment Life-Cycle services.</p>
 
 </div></a>
@@ -20,14 +20,14 @@
 
 <div class="service">  <a href="in-house-solutions">
       <div><h1>In-house recruitment solutions</h1>
-    <img src="http://www.peopletraction.co.uk/images/inhouse.svg" style="width:124px;width:124px;">
-    <p>People Traction in-house recruitment solutions are designed to compliment your current business processes. One size never fits all, which is why our <span style="white-space: nowrap;">in-house</span> solutions are tailored to each client and are flexible to ensure they are always right for your business.</p><p><span class="link" >Learn more</span> about how our in-house solutions can benefit your business.</p>
+    <img src="images/inhouse.svg" style="width:124px;width:124px;" alt="In-house recruitment solutions link">
+    <p>People Traction in-house recruitment solutions are designed to complement your current business processes. One size never fits all, which is why our <span style="white-space: nowrap;">in-house</span> solutions are tailored to each client and are flexible to ensure they are always right for your business.</p><p><span class="link" >Learn more</span> about how our in-house solutions can benefit your business.</p>
 
   </div></a>
   </div>
   <div class="service">
   <a href="recruitment-projects"><div><h1>Recruitment Projects</h1>
-    <div><img src="http://www.peopletraction.co.uk/images/project.svg" style="width:124px;width:124px;">
+    <div><img src="images/project.svg" style="width:124px;width:124px;" alt="Recruitment Projects link">
       <p>Our Recruitment Projects service offers you the ability to find talent for multiple positions within your business over a short period of time whilst benefiting from the cost efficiencies at heart of all People Traction services.</p> <p><span class="link" >Learn more</span> about how our <span style="white-space: nowrap;">Recruitment Projects</span> service can benefit your business.</p>
   </div></a>
 </div>

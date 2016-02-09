@@ -3,7 +3,7 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="home-post">
 <div class="post-head">
-<h1>
+<h1 class="blog-index-title">
         <a href="<?php echo the_permalink(); ?>" class="post-title"><?php echo the_title(); ?></a>
 </h1>
 

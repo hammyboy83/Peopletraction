@@ -262,7 +262,7 @@ section.social img{
   background: url("http://www.peopletraction.co.uk/images/about-hero.gif") fixed;
   background-repeat: no-repeat;
   background-position: center;
-  width:87.2%;
+  width:90%;
   margin:0 auto 3% auto;
   padding:20px;box-sizing:
   padding-box;
@@ -343,19 +343,27 @@ and (max-device-width : 1366px) ,
   background: url("http://www.peopletraction.co.uk/images/hero3.jpg") scroll!important;
   background-attachment: scroll!important;
   min-height:50%;
+  width: 90%;
 }
 #hero.inhouse{
   background: url("http://www.peopletraction.co.uk/images/hero2.jpg") scroll !important;
   background-attachment: scroll!important;
+  width: 90%;
+
 }
 #hero.home{
   background: url("http://www.peopletraction.co.uk/images/hero.jpg") scroll !important;
   background-attachment: scroll!important;
   background-position: right top !important;
+  width: 90%;
 }
 
 #about-hero{
   background: url("http://www.peopletraction.co.uk/images/about-hero.gif") ;
+  background-attachment: scroll!important;
+  background-position: right top !important;
+  width: 90%;
+
 }
 }
 
@@ -972,12 +980,25 @@ input[type=checkbox]:checked ~ [for="read_more"] .button {
 .side-bar{
   width:20%;
 }
-
+div.side-item{
+  border: 1px #454545;
+  border-radius: 2px;
+}
+div.side-item h1{
+  font-size: 15px;
+  margin-bottom: 30px;
+  height: auto;
+}
+.the-item-excerpt{
+  font-size: 12px;
+  line-height: 16px;
+}
 .entry-content {
   width: 80%;
   margin: auto;
   font-size: 20px;
   line-height: 33px;
+  margin-bottom: 8%;
 }
 div .entry-head {
     width: 80%;
@@ -985,6 +1006,7 @@ div .entry-head {
     display: block;
 }
 .home-post {
+  height: 600px;
   width: 300px;
   margin: 3%;
   padding: 2%;
@@ -995,7 +1017,26 @@ div .entry-head {
   box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.3);
   border-radius: 10px;
   min-height: 300;
+}
 
+
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+                            {
+                              .home-post {
+                                height: auto ;
+                                width: 86.6%;
+                                margin: 3%;
+                                padding: 2%;
+                                box-sizing: padding-box;
+                                display: block;
+                                text-align: center;
+                                align-self: flex-start;
+                                box-shadow: 10px 10px 24px 1px rgba(0, 0, 0, 0.3);
+                                border-radius: 10px;
+                                min-height: 300;}
 }
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{
   width:90%;
@@ -1011,7 +1052,7 @@ a.entry-title {
 .site-main{
   width: 90%;
   margin: auto;
-  text-align: center;
+  text-align: left;
 }
 .single-main{
   width: 90%;
@@ -1019,7 +1060,14 @@ a.entry-title {
   text-align: center;
   display: inline-flex;
 }
-.post-main{
+
+#primary.single-content-area {
+  width:90%;
+  margin-left: 5%;
+  display: inline-flex;
+
+}
+div.post-main{
   width: 90%;
   margin: auto;
   text-align: center;
@@ -1100,5 +1148,9 @@ h2.screen-reader-text {
 .blog_nav{
   width:60%;
   display: inline;
+}
+h1.blog-index-title {
+  height: auto;
+  line-height: 30px;
 }
 /**

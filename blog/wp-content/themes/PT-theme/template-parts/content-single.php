@@ -20,18 +20,16 @@ $post_image_id = get_post_thumbnail_id($post_to_use->ID);
 	<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	<div class="post-details">
-			<?php the_author(); ?><span>,</span>
-			<?php the_time('jS F Y') ?>
-	</div>
+
 	<div class="post-main">
-	<div class="post-thumb" style="background: url('<?php echo $thumbnail; ?>');background-size:cover;height: 30%;background-attachment:fixed;">
+		<div class="post-details">
+				<?php the_author(); ?><span>,</span>
+				<?php the_time('jS F Y') ?>
+		</div>
+	<div class="post-thumb" style="background: url('<?php echo $thumbnail; ?>');background-size:cover;height: 40%;background-attachment:fixed;width:100%;">
 	</div>
 	<div class="entry-content">
 		  <?php the_content() ?>
 	</div><!-- .entry-content -->
-	<div class="side-bar">
-			<?php get_sidebar()?>
-	</div>
 	</div>
 </article><!-- #post-## -->

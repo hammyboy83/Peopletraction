@@ -1,8 +1,8 @@
 
-  <section id="hero" class="inhouse">
+  <section id="hero" class="inhouse" title="In-house recruitment solutions and stratgey">
     <p>Delivering top talent efficiently through <span style="white-space: nowrap;">In-house</span> recrutiment solutions</p>
   </section>
-  <?php include 'php-fn/sticky-contact.php' ; ?>
+  <?php include '../php-fn/sticky-contact.php' ; ?>
   <div class="hr-line">
   </div>
   <main class="service-main">

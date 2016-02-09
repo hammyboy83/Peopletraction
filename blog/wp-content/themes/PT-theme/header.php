@@ -1,6 +1,5 @@
-<html>
+<!doctype html>
 <head>
-<title>Tutorial theme</title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 <?php include ($_SERVER['DOCUMENT_ROOT'] . '/php-fn/head.php'); ?>

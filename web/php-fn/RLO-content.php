@@ -1,7 +1,7 @@
-<section id="hero" class="lifecycle">
+<section id="hero" class="lifecycle" title="Recruitment process solutions and stratgey">
     <p>Providing sustainable recruitment processes through Recruitment <span style="white-space: nowrap;">Life-Cycle</span> Outsourcing</p>
 </section>
-<?php include 'php-fn/sticky-contact.php' ; ?>
+<?php include '../php-fn/sticky-contact.php' ; ?>
 <div class="hr-line">
 </div>
 <main class="service-main">

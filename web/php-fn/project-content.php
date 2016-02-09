@@ -1,4 +1,4 @@
-<section id="hero" class="lifecycle">
+<section id="hero" class="lifecycle" title="Project recruitment solutions and stratgey">
     <p>Providing sustainable recruitment processes through Recruitment <span style="white-space: nowrap;">Life-Cycle</span> Outsourcing</p>
 </section>
 <?php include 'php-fn/sticky-contact.php' ; ?>

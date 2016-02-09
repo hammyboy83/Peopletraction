@@ -1,17 +1,24 @@
-<?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
+<?php include 'php-fn/head.php' ; ?>
+<style type="text/css">
+<?php include 'php-fn/eucookie-css.php' ; ?>
+</style>
+<?php include 'php-fn/eucookie-fn.php' ; ?>
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define('WP_USE_THEMES', true);
+<body>
+              <?php
+              $class = home;
+                include 'php-fn/header.php' ; ?>
 
-/** Loads the WordPress Environment and Template */
-require( dirname( __FILE__ ) . '/blog/wp-blog-header.php' );
+              <?php include 'php-fn/sticky-contact.php' ; ?>
+
+              <?php include 'php-fn/hr-line.php' ; ?>
+
+              <?php include 'php-fn/home-content.php' ; ?>
+
+              <?php include 'php-fn/footer.php' ; ?>
+
+</body>
+
+    <?php include 'php-fn/ga.php' ; ?>
+
+</html>

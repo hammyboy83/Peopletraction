@@ -1,5 +1,5 @@
 </section>
-<?php include 'php-fn/sticky-contact.php' ; ?>
+<?php include '../php-fn/sticky-contact.php' ; ?>
 
 <div class="hr-line">
 </div>
@@ -44,5 +44,5 @@
 <h2>More Information</h2>
 
 <p>Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site. However if you are still looking for more information then you can contact us through one of our preferred contact methods.</p>
-<?php include 'php-fn/contact-form.php' ; ?>
+<?php include '../php-fn/contact-form.php' ; ?>
 </article>

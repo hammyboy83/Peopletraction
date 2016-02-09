@@ -20,7 +20,7 @@ if(!isset($_COOKIE["eucookie"]))
 { ?>
     <div id="eucookielaw" >
             <p>By browsing our site you agree to our use of cookies. You will only see this message once.
-            <a href="cookies" id="more">Find out more</a></p>
+            <a href="cookies/" id="more" style="color:#ffffff;text-decoration:underline;">Find out more</a></p>
     </div>
 
 

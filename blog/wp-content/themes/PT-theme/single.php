@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div id="primary" class="content-area">
+<div id="primary" class="single-content-area">
 	<main id="main" class="site-main" role="main">
 
 		<?php if (have_posts()) :
@@ -13,6 +13,9 @@
 
 
 	</main><!-- .site-main -->
+	<div class="side-bar">
+			<?php get_sidebar()?>
+	</div>
 
 
 </div><!-- .content-area -->
